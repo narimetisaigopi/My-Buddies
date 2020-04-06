@@ -63,7 +63,7 @@ public class FirebaseUtilities {
                 if (task.isSuccessful()){
                     Toast.makeText(context, "Account created successfully", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(context, LoginActivity.class);
-                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     context.startActivity(intent);
                 }
             }
@@ -87,7 +87,7 @@ public class FirebaseUtilities {
                 if (task.isSuccessful()){
                     Toast.makeText(context, "Login successfully", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(context, MainActivity.class);
-                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     context.startActivity(intent);
                 }
             }
