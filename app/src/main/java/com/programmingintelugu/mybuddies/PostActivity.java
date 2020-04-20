@@ -35,6 +35,7 @@ public class PostActivity extends AppCompatActivity {
     @BindView(R.id.action)
     Button action;
 
+
     int PICK_IMAGE = 12;
     int STORAGE_PERMISSIONS = 12;
 

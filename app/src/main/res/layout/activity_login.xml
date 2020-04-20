@@ -61,6 +61,14 @@
             android:textColor="@color/black"
             android:text="Register Here"/>
 
+        <com.google.android.gms.common.SignInButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/googleSignIn"/>
+
+
+
+
     </LinearLayout>
 
 </RelativeLayout>
