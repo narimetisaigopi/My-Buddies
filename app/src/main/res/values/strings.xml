@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">My Buddies</string>
+    <string name="login_with_mobile_number">Login With Mobile Number</string>
 </resources>

@@ -61,6 +61,16 @@
             android:textColor="@color/black"
             android:text="Register Here"/>
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_with_mobile_number"
+            android:layout_marginTop="16dp"
+            android:textSize="20dp"
+            android:padding="8dp"
+            android:textAllCaps="false"
+            android:text="@string/login_with_mobile_number"/>
+
         <com.google.android.gms.common.SignInButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -70,13 +80,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="connect_with_facebook"
+            android:visibility="gone"
             android:id="@+id/facebookLogin"/>
-
-
-
-
-
-
     </LinearLayout>
 
 </RelativeLayout>

@@ -58,6 +58,8 @@ public class LoginActivity extends AppCompatActivity {
 
     CallbackManager callbackManager;
 
+    Button login_with_mobile_number;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,6 +67,7 @@ public class LoginActivity extends AppCompatActivity {
         FacebookSdk.sdkInitialize(getApplicationContext());
         setContentView(R.layout.activity_login);
 
+        login_with_mobile_number = findViewById(R.id.login_with_mobile_number);
         callbackManager = CallbackManager.Factory.create();
         facebookLogin = findViewById(R.id.facebookLogin);
         emailEditText = findViewById(R.id.emailEditText);
@@ -108,6 +111,14 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(LoginActivity.this,RegisterActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        login_with_mobile_number.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this,MobileNumberActivity.class);
                 startActivity(intent);
             }
         });
